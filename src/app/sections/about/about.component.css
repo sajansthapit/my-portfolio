@@ -1,0 +1,28 @@
+:host {
+  display: block;
+}
+
+h1 {
+  overflow: hidden;
+  text-align: start;
+}
+
+h1::before,
+h1::after {
+  background-color: #ffffff;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+}
+
+h1::before {
+  right: 0.5em;
+}
+
+h1::after {
+  left: 0.5em;
+  width: 100%;
+  margin-right: -50%;
+}
