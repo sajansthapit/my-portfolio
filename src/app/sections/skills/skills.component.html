@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="text-white">
+    <h1 class="text-center fw-light">My Skills</h1>
+  </div>
+
+  <div class="row row-cols-4 text-center py-5 gy-4">
+    <div *ngFor="let skill of mySkills">
+      <div class="col image-div">
+        <a [href]="skill.link" target="_blank">
+        <img [src]="skill.logo" class="img-fluid" alt="skill" />
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

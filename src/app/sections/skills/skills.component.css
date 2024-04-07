@@ -1,0 +1,18 @@
+:host {
+  display: block;
+}
+
+img {
+  width: 35%;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  filter: grayscale(0);
+}
+
+.image-div {
+  cursor: pointer;
+  border-radius: 30px;
+  box-shadow: 7px 6px 6px -6px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 7px 6px 6px -6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 7px 6px 6px -6px rgba(0, 0, 0, 0.75);
+}
