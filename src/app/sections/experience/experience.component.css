@@ -1,0 +1,56 @@
+:host {
+  display: block;
+}
+h1 {
+  overflow: hidden;
+  text-align: start;
+}
+
+h1::before,
+h1::after {
+  background-color: #ffffff;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+}
+
+h1::before {
+  right: 0.5em;
+  width: 100%;
+  margin-left: -50%;
+}
+
+h1::after {
+  left: 0.5em;
+}
+
+ul.timeline {
+  list-style-type: none;
+  position: relative;
+}
+ul.timeline:before {
+  content: " ";
+  background: #d4d9df;
+  display: inline-block;
+  position: absolute;
+  left: 29px;
+  width: 1px;
+  height: 100%;
+}
+ul.timeline > li {
+  margin: 20px 0;
+  padding-left: 25px;
+}
+ul.timeline > li:before {
+  content: " ";
+  background: #0d6efd;
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid #000000;
+  left: 20px;
+  width: 20px;
+  height: 20px;
+}
