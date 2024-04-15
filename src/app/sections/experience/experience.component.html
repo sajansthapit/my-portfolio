@@ -1,17 +1,19 @@
 <div class="container">
   <h1 class="text-primary fw-light text-end">Experience</h1>
-  <div class="row py-5">
-    <div class="">
+  <div class="row py-5" style="margin-left: 20%">
+    <div>
       <ul class="timeline" *ngFor="let experience of myExperiences">
+        <div class="text-white lead year">
+          {{ experience.year }}
+        </div>
         <li>
-          <div class="text-white fs-4">
+          <div class="text-primary fs-5">
             {{ experience.position }}
-            <span class="text-primary fs-5">[{{ experience.year }}]</span>
           </div>
-          <div class="text-white lead py-2">
+          <div class="text-white py-2">
             {{ experience.company }}
           </div>
-          <div class="py-2">
+          <div class="py-1">
             <p class="text-white-50" *ngFor="let detail of experience.details">
               {{ detail }}
             </p>
@@ -21,3 +23,4 @@
     </div>
   </div>
 </div>
+<!--  -->
